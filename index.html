@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Stefan Wissert Portfolio</title>
 	<!--Favicon -->
 	<link href="img/favicon-32x32.png" rel="shortcut icon">
@@ -11,43 +12,47 @@
 	<link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<img src="img/myAvatar.png" alt="Logo">
-		<!-- Navigation -->
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div class="wrapper">
+		<header>
+			<!-- Navigation -->
+			<nav>
+				<img class="logo" src="img/myAvatar.png" alt="Logo">
+				<ul class="navigation">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav> 
+		</header>
+		
+		<h1>Hi, my name is Stefan. <span>Welcome to my portfolio site!</span></h1>
 
-	<h1>Hi, my name is Stefan. <span>Welcome to my portfolio site!</span></h1>
-
-	<!-- overall container for the 4 containers-->
-	<div>
-		<!--Container 1-->
-		<div>
-			<img src="img/dt_workshop.jpg" alt="Design Thinking Workshop Picture" >
-			<h2>Agile/Design Thinking Workshops</h2>
-		</div>
-		<!--Container 2-->
-		<div>
-			<img src="img/ports.jpg" alt="PortS Picture" >
-			<h2>PortS Mobile Product Portfolio App</h2>
-		</div>
-		<!--Container 3-->
-		<div>
-			<img src="img/apprende.jpg" alt="Apprende Screenshot" >
-			<h2>"Ap(p)prende" Vocabulary App UX Design</h2>
-		</div>
-		<!--Container 4-->
-		<div>
-			<img src="img/homecourt.jpg" alt="Homecourt Screenshot" >
-			<h2>"Homecourt" Streetball App UX Design</h2>
+		<!-- overall container for the 4 containers-->
+		<div class="columns-container">
+			<!--Container 1-->
+			<div class="column-4">
+				<img src="img/dt_workshop.jpg" alt="Design Thinking Workshop Picture" >
+				<h2>Agile/Design Thinking Workshops</h2>
+			</div>
+			<!--Container 2-->
+			<div class="column-4">
+				<img src="img/ports.jpg" alt="PortS Picture" >
+				<h2>PortS Mobile Product Portfolio App</h2>
+			</div>
+			<!--Container 3-->
+			<div class="column-4">
+				<img src="img/apprende.jpg" alt="Apprende Screenshot" >
+				<h2>"Ap(p)prende" Vocabulary App UX Design</h2>
+			</div>
+			<!--Container 4-->
+			<div class="column-4">
+				<img src="img/homecourt.jpg" alt="Homecourt Screenshot" >
+				<h2>"Homecourt" Streetball App UX Design</h2>
+			</div>
 		</div>
 	</div>
+	
+
 
 
 </body>
