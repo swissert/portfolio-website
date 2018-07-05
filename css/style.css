@@ -16,6 +16,9 @@ body {
   font-size: 20px; /* Sets the font size to 16px */
   line-height: 1.6; /* Sets the line-height to 1.6 */
 }
+p{
+  text-align: center;
+}
 h1 {
   font-size: 26px;
   text-align: center; /* Centers text */
