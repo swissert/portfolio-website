@@ -81,8 +81,8 @@ button:focus,
 
 /* Layout styling */
 
-img { 
-	width:100%;
+img {
+  width:100%;
 }
 
 .logo {
@@ -116,15 +116,15 @@ img {
 }
 
 header{
-	border-bottom: 5px solid #ccc;
-	margin-bottom: 60px;
+  border-bottom: 5px solid #ccc;
+  margin-bottom: 60px;
 }
 
 /*Navigation Bar*/
 nav{
-	display: inline-block;
-	float:right;
-	margin-top: 12px;
+  display: inline-block;
+  float:right;
+  margin-top: 12px;
 }
 
 .navigation {
@@ -140,38 +140,38 @@ nav{
 }
 
 .no_underline {
-	text-decoration:none;
+  text-decoration:none;
 }
 
 /* Brackets go out */
 ul.brackets li:before, ul.brackets li:after
 {
-    position: relative;
-    opacity: 0;
-    font-size: 22px;
-	color: #1E90FF;
-    top: 0px;
-    transition: all 0.5s;
+  position: relative;
+  opacity: 0;
+  font-size: 22px;
+  color: #1E90FF;
+  top: 0px;
+  transition: all 0.5s;
 }
 
 ul.brackets li:before
 {
-    content: '(';
-    left: 0px;
-    transform: translateX(10px);
+  content: '(';
+  left: 0px;
+  transform: translateX(10px);
 }
 
 ul.brackets li:after
 {
-    content: ')';
-    right: 0px;
-    transform: translateX(-10px);
+  content: ')';
+  right: 0px;
+  transform: translateX(-10px);
 }
 
 ul.brackets li:hover:before, ul.brackets li:hover:after
 {
-    opacity: 1;
-    transform: translateX(0px);
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 
@@ -182,10 +182,10 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
   .logo {
     /* Make logo smaller by changing it's height */
     width: 50px;
-	border-radius: 50%;
-	border: 1px solid grey;
-	margin-top: 4px;
-}
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-top: 4px;
+  }
 
   h1 {
     /* Reduce font-size of heading */
@@ -236,7 +236,29 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
     width: 100%;
     margin-right: 0;
   }
+}
 
-  }
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
 
- }
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
