@@ -62,7 +62,7 @@ button,
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid  #5D5D5D; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 0.3s background-color;
   margin: 20px 0;
   display: inline-block;
 }
@@ -72,11 +72,19 @@ button:focus,
 .button:hover,
 .button:focus {
   cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
-  opacity: 0.8; /* Reduces the opactiy of the button to 80% */
+  /*opacity: 0.8;  Reduces the opactiy of the button to 80% */
+  background-color: #F36D34;
 }
 
 .button-secondary {
   background-color: #F36D34;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
+  /*opacity: 0.8;  Reduces the opactiy of the button to 80% */
+  background-color: #1E90FF;
 }
 
 /* Layout styling */
@@ -248,17 +256,17 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
 }
 
 @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
+    from {transform: translate(0,10px);}
+    to {transform: translate(100%,10px);} 
 }
 .cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+  animation: 5s cloud-move infinite linear;
 }
 
 @keyframes cloud-move-reverse {
     from {transform: translate(446px,48px);}
-    to {transform: translate(100px, 48px);}
+    to {transform: translate(0px, 48px);}
 }
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 20s cloud-move-reverse infinite alternate linear;
 }
