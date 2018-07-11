@@ -198,12 +198,10 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
   h1 {
     /* Reduce font-size of heading */
     font-size: 24px;
-    text-align: center;
   }
 
   h2 {
     font-size: 20px;
-    text-align: center;
   }
 
   .column-4 {
@@ -224,7 +222,7 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
 
 /*One column layout - mobile*/
 
-@media all and (max-width: 767x) {
+@media all and (max-width: 767px) {
   .logo {
     /* Make logo smaller by changing it's height */
     width: 50px;
