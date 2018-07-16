@@ -101,7 +101,7 @@ img {
 
 .wrapper {
   width: 100%;
-  max-width: 1000px;
+  max-width: 2500px; 
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   padding: 0 20px;
 }
@@ -117,6 +117,7 @@ img {
   margin-right: 1%;
   float: left;
   text-align: center; /* Centers text */
+  vertical-align:top;
 }
 
 .column-4:last-child {
@@ -267,4 +268,22 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
 }
 .cloud-back {
   animation: 20s cloud-move-reverse infinite alternate linear;
+}
+
+/*jQuery Übungen*/
+.project-details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Reset this to 0 */
+  padding: 10px;
+  background: rgba(30, 144, 255, 0.5);
+  color: white;
+  font-size: 20px;
+}
+.project {
+  position: relative;
 }
