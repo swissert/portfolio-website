@@ -101,7 +101,7 @@ img {
 
 .wrapper {
   width: 100%;
-  max-width: 2500px; 
+  max-width: 2500px;
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
   padding: 0 20px;
 }
@@ -183,6 +183,24 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
   transform: translateX(0px);
 }
 
+/*jQuery Übungen*/
+.project-details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Reset this to 0 */
+  padding: 10px;
+  background: rgba(30, 144, 255, 0.8);
+  color: white;
+  font-size: 20px;
+  text-align: left;
+}
+.project {
+  position: relative;
+}
 
 
 /*MEDIA QUERIES*/
@@ -217,6 +235,9 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
 
   body {
     font-size: 16px; /* Sets the font size to 16px */
+  }
+  .project-details {
+    font-size: 16px;
   }
 
 }
@@ -256,7 +277,7 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
 
 @keyframes cloud-move {
     from {transform: translate(0,10px);}
-    to {transform: translate(100%,10px);} 
+    to {transform: translate(100%,10px);}
 }
 .cloud-front {
   animation: 5s cloud-move infinite linear;
@@ -268,22 +289,4 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
 }
 .cloud-back {
   animation: 20s cloud-move-reverse infinite alternate linear;
-}
-
-/*jQuery Übungen*/
-.project-details {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0; /* Reset this to 0 */
-  padding: 10px;
-  background: rgba(30, 144, 255, 0.5);
-  color: white;
-  font-size: 20px;
-}
-.project {
-  position: relative;
 }
