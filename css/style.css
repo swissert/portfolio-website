@@ -14,7 +14,9 @@ Tertiary Color (Orange) #F36D34;
 body {
   font-family: 'Actor', sans-serif;
   font-size: 20px;
-  line-height: 1.6; /* Sets the line-height to 1.6 */
+  line-height: 1.6;
+
+  /* Sets the line-height to 1.6 */
 }
 
 .center {
@@ -33,35 +35,44 @@ h3 {
   font-size: 20px;
 }
 
-/*style of Links*/
+/* style of Links */
+
 a,
 a:visited {
-  color: #1E90FF;
+  color: #1e90ff;
 }
 
 a:hover,
 a:focus {
-  text-decoration: none; /* No underlining when hovering over a link */
+  text-decoration: none;
+
+  /* No underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  color: #5D5D5D;
+  color: #5d5d5d;
 }
 
 button,
 .button {
   /* overwrite browser defaults */
-  border: none; /* reset the border */
-  font-family: inherit; /* takes the font from the outer container */
+  border: none;
+
+  /* reset the border */
+  font-family: inherit;
+
+  /* takes the font from the outer container */
 
   /* style button */
-  background-color: #1E90FF;
+  background-color: #1e90ff;
   color: white !important;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid  #5D5D5D; /* width of the border, type, color */
+  border-bottom: 2px solid #5d5d5d;
+
+  /* width of the border, type, color */
   transition: 0.3s background-color;
   margin: 20px 0;
   display: inline-block;
@@ -71,38 +82,46 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
-  /*opacity: 0.8;  Reduces the opactiy of the button to 80% */
-  background-color: #F36D34;
+  cursor: pointer;
+
+  /* let's the mouse appear as hand when hovering over the button */
+
+  /* opacity: 0.8;  Reduces the opactiy of the button to 80% */
+  background-color: #f36d34;
 }
 
 .button-secondary {
-  background-color: #F36D34;
+  background-color: #f36d34;
 }
 
 .button-secondary:hover,
 .button-secondary:focus {
-  cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
-  /*opacity: 0.8;  Reduces the opactiy of the button to 80% */
-  background-color: #1E90FF;
+  cursor: pointer;
+
+  /* let's the mouse appear as hand when hovering over the button */
+
+  /* opacity: 0.8;  Reduces the opactiy of the button to 80% */
+  background-color: #1e90ff;
 }
 
 /* Layout styling */
 
 img {
-  width:100%;
+  width: 100%;
 }
 
 .logo {
   margin-top: 25px;
   width: 100px;
-  border-radius: 50% 50%;
+  border-radius: 50%;
 }
 
 .wrapper {
   width: 100%;
   max-width: 2500px;
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  margin: 0 auto;
+
+  /* No spacing to top and bottom and auto spacing to left and right */
   padding: 0 20px;
 }
 
@@ -111,33 +130,35 @@ img {
 }
 
 .column-4 {
-  font-size:16px;
+  font-size: 16px;
   width: 23.5%;
   display: inline-block;
   margin-right: 1%;
   float: left;
-  text-align: center; /* Centers text */
-  vertical-align:top;
+  text-align: center;
+
+  /* Centers text */
+  vertical-align: top;
 }
 
 .column-4:last-child {
   margin-right: 0;
 }
 
-header{
+header {
   border-bottom: 5px solid #ccc;
   margin-bottom: 60px;
 }
 
-/*Navigation Bar*/
-nav{
+/* Navigation Bar */
+
+nav {
   display: inline-block;
-  float:right;
+  float: right;
   margin-top: 12px;
 }
 
 .navigation {
-
   list-style-type: none;
   padding: 0;
   float: right;
@@ -149,7 +170,7 @@ nav{
 }
 
 .no_underline {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 /* Brackets go out */
@@ -158,32 +179,33 @@ ul.brackets li:before, ul.brackets li:after
   position: relative;
   opacity: 0;
   font-size: 22px;
-  color: #1E90FF;
-  top: 0px;
+  color: #1e90ff;
+  top: 0;
   transition: all 0.5s;
 }
 
 ul.brackets li:before
 {
   content: '(';
-  left: 0px;
+  left: 0;
   transform: translateX(10px);
 }
 
 ul.brackets li:after
 {
   content: ')';
-  right: 0px;
+  right: 0;
   transform: translateX(-10px);
 }
 
 ul.brackets li:hover:before, ul.brackets li:hover:after
 {
   opacity: 1;
-  transform: translateX(0px);
+  transform: translateX(0);
 }
 
-/*jQuery Übungen*/
+/* jQuery Übungen */
+
 .project-details {
   display: none;
   position: absolute;
@@ -191,20 +213,24 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
   left: 0;
   width: 100%;
   height: 100%;
-  margin: 0; /* Reset this to 0 */
+  margin: 0;
+
+  /* Reset this to 0 */
   padding: 10px;
   background: rgba(30, 144, 255, 0.8);
   color: white;
   font-size: 20px;
   text-align: left;
 }
+
 .project {
   position: relative;
 }
 
+/* MEDIA QUERIES */
 
-/*MEDIA QUERIES*/
-/*Two column layout - Tablets*/
+/* Two column layout - Tablets */
+
 @media all and (max-width: 951px) {
   .logo {
     /* Make logo smaller by changing it's height */
@@ -234,15 +260,17 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
   }
 
   body {
-    font-size: 16px; /* Sets the font size to 16px */
+    font-size: 16px;
+
+    /* Sets the font size to 16px */
   }
+
   .project-details {
     font-size: 16px;
   }
-
 }
 
-/*One column layout - mobile*/
+/* One column layout - mobile */
 
 @media all and (max-width: 767px) {
   .logo {
@@ -267,26 +295,47 @@ ul.brackets li:hover:before, ul.brackets li:hover:after
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,10px);}
-  to {transform: translate(100%,10px);}
+  from {
+    transform: translate(0, 10px);
+  }
+
+  to {
+    transform: translate(100%, 10px);
+  }
 }
+
 .cloud-front {
   animation: 5s cloud-move infinite linear;
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(0px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(0, 48px);
+  }
 }
+
 .cloud-back {
   animation: 20s cloud-move-reverse infinite alternate linear;
 }
